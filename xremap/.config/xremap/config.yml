@@ -1,0 +1,8 @@
+modmap:
+  - name: main remaps
+    remap:
+      KEY_RIGHTALT: KEY_LEFTMETA
+      CapsLock: Esc
+      KEY_LEFTMETA: KEY_BACKSPACE
+       
+

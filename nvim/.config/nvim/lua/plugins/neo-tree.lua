@@ -7,7 +7,7 @@ return {
     "MunifTanjim/nui.nvim",
   },
   config = function()
-    vim.api.nvim_set_keymap("n", "<A-e>", [[:Neotree toggle<CR>]], { noremap = true, silent = true })
+    vim.api.nvim_set_keymap("n", "<A-i>", [[:Neotree toggle<CR>]], { noremap = true, silent = true })
     -- Map Alt+j to switch to the next tab
     vim.api.nvim_set_keymap("n", "<M-k>", ":tabnext<CR>", { noremap = true, silent = true })
     -- Map Alt+k to switch to the previous tab

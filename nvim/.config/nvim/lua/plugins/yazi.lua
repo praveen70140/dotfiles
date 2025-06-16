@@ -12,7 +12,7 @@ return{
     },
     {
       -- Open in the current working directory
-      "<A-e>",
+      "<A-i>",
       "<cmd>Yazi cwd<cr>",
       desc = "Open the file manager in nvim's working directory",
     },

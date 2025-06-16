@@ -19,6 +19,9 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
   })
 end
 vim.opt.rtp:prepend(lazypath)
+vim.keymap.set("n", "<C-f>", function()
+  vim.lsp.buf.format()
+end, { noremap = true, silent = true })
 
 --local opts = {}
 require("vim-options")

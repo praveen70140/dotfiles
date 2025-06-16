@@ -10,7 +10,7 @@ return {
     "williamboman/mason-lspconfig.nvim",
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = { "lua_ls", "tsserver", "pyright" },
+        ensure_installed = { "lua_ls", "ts_ls", "pyright" },
       })
     end,
   },
@@ -21,7 +21,7 @@ return {
 
       lspconfig.lua_ls.setup({})
 
-      lspconfig.tsserver.setup({
+      lspconfig.ts_ls.setup({
         init_options = {
           maxTsServerMemory = 8192,
           disableAutomaticTypingAcquisition = false,
